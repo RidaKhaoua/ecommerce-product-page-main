@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+    <main>
+      <!-- strat nav -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container flex-nowrap position-relative gap-3 border-bottom">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand d-flex justify-center align-items-center logo me-5" href="#"><img
+              src="./images/logo.svg" alt=""></a>
+
+          <div class="collapse navbar-collapse nav" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto  mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center" aria-current="page" href="#">Collections</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center" href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cart-profile  d-flex align-items-center gap-4">
+            <div role="button" class="icon-cart position-relative">
+
+              <span class="number-products">0</span>
+
+              <img src="./images/icon-cart.svg" alt="">
+
+              <div class="cart position-absolute   border hidden">
+                <h6 class="title text-capitalize p-3 fw-bold  border-bottom">cart</h6>
+                <p class="text-center active pt-5 pb-5">Your cart is empty</p>
+                <div class="product ps-3 pe-3">
+
+                </div>
+                <div class="btn-checkout hidden ps-3 pe-3 pb-3">
+                  <button type="button" class="btn main-btn w-100">checkout</button>
+                </div>
+              </div>
+
+            </div>
+            <div role="button" class="profile">
+              <img class="img-fluid" src="./images/image-avatar.png" alt="">
+            </div>
+          </div>
+
+        </div>
+      </nav>
+      <!-- end nav -->
+      <section class="products pt-sm-5 pb-sm-5">
+        <div class="container">
+          <div class="row products-image align-items-center">
+            <!-- first column -->
+            <div class="col-md-6 col-lg-7 show-products image-content mb-5">
+              <div class="big-image mb-4">
+                <div
+                  class="previous position-absolute  d-sm-none  top-50  d-flex justify-content-center align-items-center ">
+                  <img role="button" src="images/icon-previous.svg" class="img-fluid" alt="">
+                </div>
+                <div class="content-image">
+                  <div class="images">
+                    <img src="images/image-product-1.jpg" class="img-fluid one active" alt="">
+                    <img src="images/image-product-2.jpg" class="img-fluid two" alt="">
+                    <img src="images/image-product-3.jpg" class="img-fluid three" alt="">
+                    <img src="images/image-product-4.jpg" class="img-fluid foor" alt="">
+                  </div>
+                </div>
+
+                <div class="next position-absolute   d-sm-none top-50 d-flex justify-content-center align-items-center">
+                  <img role="button" src="images/icon-next.svg" class="img-fluid " alt="">
+                </div>
+              </div>
+              <div class="small-images d-flex  d-none d-sm-flex justify-content-center  gap-3">
+                <div class="image active"><img class="img-fluid" data-img="one"
+                    src="images/image-product-1-thumbnail.jpg" alt="">
+                </div>
+                <div class="image"><img class="img-fluid" data-img="two" src="images/image-product-2-thumbnail.jpg"
+                    alt=""></div>
+                <div class="image"><img class="img-fluid" data-img="three" src="images/image-product-3-thumbnail.jpg"
+                    alt=""></div>
+                <div class="image"><img class="img-fluid" data-img="foor" src="images/image-product-4-thumbnail.jpg"
+                    alt=""></div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-7 show-full-products image-content mb-5">
+              <div class="big-image mb-4">
+
+
+                <div class="previous position-absolute    top-50  d-flex justify-content-center align-items-center ">
+                  <img role="button" src="images/icon-previous.svg" class="img-fluid" alt="">
+                </div>
+
+                <div class="content-image">
+                  <div class="close">
+                    <img src="images/icon-close.svg" alt="">
+                  </div>
+
+                  <div class="images">
+                    <img src="images/image-product-1.jpg" class="img-fluid one active" alt="">
+                    <img src="images/image-product-2.jpg" class="img-fluid two" alt="">
+                    <img src="images/image-product-3.jpg" class="img-fluid three" alt="">
+                    <img src="images/image-product-4.jpg" class="img-fluid foor" alt="">
+                  </div>
+                </div>
+
+                <div class="next position-absolute   top-50 d-flex justify-content-center align-items-center">
+                  <img role="button" src="images/icon-next.svg" class="img-fluid " alt="">
+                </div>
+              </div>
+
+              <div class="small-images d-flex  d-none d-sm-flex justify-content-center  gap-3">
+                <div class="image active"><img class="img-fluid" data-img="one"
+                    src="images/image-product-1-thumbnail.jpg" alt="">
+                </div>
+                <div class="image"><img class="img-fluid" data-img="two" src="images/image-product-2-thumbnail.jpg"
+                    alt=""></div>
+                <div class="image"><img class="img-fluid" data-img="three" src="images/image-product-3-thumbnail.jpg"
+                    alt=""></div>
+                <div class="image"><img class="img-fluid" data-img="foor" src="images/image-product-4-thumbnail.jpg"
+                    alt=""></div>
+              </div>
+            </div>
+            <!-- end first column -->
+
+            <!-- start second column -->
+            <div class="col-md-6 col-lg-5 product-info">
+              <h1 class="title mb-4">
+                <span class="fs-6 d-block text-uppercase fw-bold mb-2">Sneaker Company</span>
+                <span class="d-block">Fall Limited Edition</span>
+                <span class="d-block">Sneakers</span>
+              </h1>
+              <p class="text">These low-profile sneakers are your perfect casual wear companion. Featuring a
+                durable rubber outer sole, they’ll withstand everything the weather can offer.
+              </p>
+              <div class="price mb-3">
+                <div class="price-with-reduction d-flex align-items-center gap-2">
+                  $125.00 <span>50%</span>
+                </div>
+                <div class="old-price text-decoration-line-through">
+                  $250.00
+                </div>
+              </div>
+
+              <div class="row buttons">
+                <div class="col-md-6 col-lg-4">
+                  <div class="chose-number d-flex justify-content-between align-items-center p-3 rounded mb-3">
+                    <img class="decrement" role="button" src="images/icon-minus.svg" alt="">
+                    <span class="fw-bold quantity">0</span>
+                    <img class="increment" role="button" src="images/icon-plus.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-8">
+                  <div class="add-to-card">
+                    <button class="btn main-btn w-100  text-white">
+                      <img class="me-2" src="images/icon-cart.svg" alt="">
+                      add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- end second column -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>
